@@ -19,7 +19,7 @@ for row in varBinds:
 # Retrieve STP port status information
 vlanAndSTP = {}
 for vlan in vlans:
-    username = snmpUsername + "@" + str(vlan)
+    username = '%s@%s' % (snmpUsername,vlan)
     errorIndication, errorStatus, errorIndex, varBinds = cmdgen.CommandGenerator().nextCmd(cmdgen.CommunityData('agent',username,0),cmdgen.UdpTransportTarget((deviceIPAddress,snmpPort)),(1,3,6,1,2,1,17,2,15,1,3))
 # Store STP port status information
     stpPortInfoForThisVLAN = {}
