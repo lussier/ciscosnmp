@@ -1,1 +1,1 @@
-I was looking for a simple way to monitor spanning-tree port status by VLAN on a Cisco Catalyst switch via SNMP so I built this coded this simple script. The package used for SNMP is pySNMP. You can download it on http://pysnmp.sourceforge.net
+I was looking for a simple way to monitor spanning-tree port status by VLAN on a Cisco Catalyst switch via SNMP so I coded this simple script. The package used for SNMP is pySNMP. You can download it at http://pysnmp.sourceforge.net
