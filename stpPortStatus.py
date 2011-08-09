@@ -37,15 +37,8 @@ for item in vlanAndSTP.iteritems():
             portNumber = str(subitem[0])
             portStatusID = subitem[1]
             portStatusDescription = statusID[portStatusID]
-            #
             vlanStr = "VLAN " + vlanID
-            space1 = ""
-            for i in range(15-len(vlanStr)):
-                space1 += " "
-            #
+            space1 =  " "*(15-len(vlanStr))
             portStr = "PORT " + portNumber
-            space2 = ""
-            for i in range(15-len(portStr)):
-                space2 += " "
-            #
+            space2 = " "*(15-len(portStr))
             print vlanStr + space1 + portStr + space2 + portStatusDescription
